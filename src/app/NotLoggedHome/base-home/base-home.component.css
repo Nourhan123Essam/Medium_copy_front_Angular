@@ -1,0 +1,39 @@
+
+:host {
+    display: block;
+    height: 100vh; /* Full viewport height */
+    background-color: #d7d79550;/* Example background */
+    margin: 0; /* Ensure no margin */
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%; /* Ensure the entire page can use full height */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scrolling */
+    /* box-sizing: border-box; */
+}
+*{
+    /* box-sizing: border-box; */
+}
+
+.buttons{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border-radius: 30%;
+}
+
+.image-column {
+    background-image: url('../../../assets/images/notlogged_home.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; /* Centers the image */
+    height:100hv;
+    overflow: hidden;
+    width: 100%;
+  }
+  .separator {
+    width: 100%;
+    border-bottom: 2px solid black;
+    clear: both; /* Clears floated elements */
+  }

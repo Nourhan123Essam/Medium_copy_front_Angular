@@ -1,0 +1,18 @@
+:host {
+    display: block;
+    height: 100vh; /* Full viewport height */
+    background-color: #cbcbb741;/* Example background */
+    margin: 0; /* Ensure no margin */
+  }
+  html, body {
+    height: 100%; /* Ensure the entire page can use full height */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+.b{
+    
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; Prevent scrolling */
+}
