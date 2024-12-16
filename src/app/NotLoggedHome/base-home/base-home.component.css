@@ -1,10 +1,10 @@
 
 :host {
-    display: block;
-    height: 100vh; /* Full viewport height */
-    background-color: #d7d79550;/* Example background */
+     display: block;
+    /*height: 100vh; Full viewport height */
+    background-color: #F5EEE6;/* Example background */
     margin: 0; /* Ensure no margin */
-    overflow: hidden;
+    overflow: scroll;
 }
 
 html, body {
@@ -17,23 +17,122 @@ html, body {
     /* box-sizing: border-box; */
 }
 
-.buttons{
-    padding: 10px;
-    font-size: 15px;
-    color: white;
-    border-radius: 30%;
+@font-face {
+  font-family: my-font;
+  src: url('/public/Merriweather-BlackItalic.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.image-column {
-    background-image: url('../../../assets/images/notlogged_home.png'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the div */
-    background-position: center; /* Centers the image */
-    height:100hv;
-    overflow: hidden;
-    width: 100%;
+ .masthead {
+  background-size: contain;
+  background-position:bottom right; 
+  min-height: 70vh; 
+  width: 100%; 
+  background-repeat: no-repeat; 
+}
+ 
+
+.buttons{
+    font-size: 10px;
+    color: white;
+    border-radius: 40px;
+    font-weight: lighter;
+}
+.separator {
+  border-bottom: 2px solid black;
+}
+  /* Ensures the footer stays at the bottom of the page */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
+  
+  .content {
+    flex: 1;
+  }
+  
+  footer {
+    padding: 20px 0;
+  }
+  
   .separator {
-    width: 100%;
-    border-bottom: 2px solid black;
-    clear: both; /* Clears floated elements */
+    margin-bottom: 20px;
   }
+  
+  .footer-btn {
+    background-color: black;
+  }
+  
+  .image-column {
+    height: 100%;
+    /* Add any background image or styles here */
+  }
+  
+  
+  /* Responsive Design */
+  /* @media (max-width: 400px) {
+    .baseStatement{
+      font-size: 5px;
+      font-weight: lighter;
+      color: red;
+    }
+  } */
+  @media (max-width: 576px) {
+    .separator {
+      margin-bottom: 10px;
+    }
+  
+    footer{
+      background-color: black;
+      color: white;
+    }
+    .login{
+      display: none;
+    }
+    .baseStatement{
+      font-size: 50px;
+    }
+    .buttons{
+      font-size: 10px;
+    }
+  }
+  @media (min-width: 576px) {
+    .baseStatement{
+      font-size: 60px;
+    }
+    .buttons{
+      font-size: 20px;
+    }
+  }
+  @media (min-width: 768px) {
+    .baseStatement{
+      font-size: 70px;
+    }
+    :host{
+      overflow: hidden;
+    }
+  }
+  @media (min-width: 992px) {
+    .baseStatement{
+      font-size: 75px;
+    }
+    .baseButton{
+      background-color: black;
+      font-size: 30px;
+    }
+   
+  }
+  @media (min-width: 1025px) {
+    .baseStatement{
+      font-size: 90px;
+    }
+  }
+  @media (min-width: 150px) {
+    .baseStatement{
+      font-size: 110px;
+    }
+  }
+  
